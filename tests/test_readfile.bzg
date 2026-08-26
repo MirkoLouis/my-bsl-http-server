@@ -1,0 +1,2 @@
+var b = readFile("public/fun.html");
+print(sizeof(b));

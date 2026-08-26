@@ -51,6 +51,13 @@ while (1) {
           + "Content-Type: text/html\r\n"   
           + "Content-Length: " + sizeof(BODY) + "\r\n"   
           + "Connection: close\r\n\r\n"; 
+ } else if (sizeof(data) >= 12 && data[0] == "G" && data[1] == "E" && data[2] == "T" && data[4] == "/" && data[5] == "f" && data[6] == "u" && data[7] == "n" && (data[8] == " " || data[8] == "?")) {   
+     BODY = readFile("public/fun.html");
+
+     HTTP = "HTTP/1.1 200 OK\r\n"   
+          + "Content-Type: text/html\r\n"   
+          + "Content-Length: " + sizeof(BODY) + "\r\n"   
+          + "Connection: close\r\n\r\n"; 
  } else if (sizeof(data) >= 14 && data[0] == "G" && data[1] == "E" && data[2] == "T" && data[4] == "/" && data[5] == "a" && data[6] == "b" && data[7] == "o" && data[8] == "u" && data[9] == "t" && (data[10] == " " || data[10] == "?")) {   
      BODY = "<!DOCTYPE html><html><head><title>BSL Server - About</title></head>"  
             + "<body style='font-family:sans-serif;'>" 
@@ -75,7 +82,8 @@ while (1) {
           + "Connection: close\r\n\r\n";   
  } 
 
- socket_write(client, HTTP + BODY, sizeof(HTTP + BODY));   
+ socket_write(client, HTTP, sizeof(HTTP));
+ socket_write(client, BODY, sizeof(BODY));
  socket_close(client);   
  gc(); // Manual Garbage Collection   
  }   

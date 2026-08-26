@@ -1,14 +1,28 @@
 # BSL HTTP Server
 
 ## 1. Project Description
-This project is a low-level HTTP Web Server built entirely from scratch using the **Bonezegei Scripting Language (BSL)** and the BSL Socket Library. The server binds to port 8080 and handles HTTP GET requests, demonstrating fundamental web server operations, socket binding, and manual route handling without the use of high-level web frameworks. 
+This project is a low-level HTTP Web Server built entirely from scratch using the **[Bonezegei Scripting Language (BSL)](https://github.com/bonezegei/Bonezegei_Scripting_Language)** and the BSL Socket Library. The server binds to port 8080 and handles HTTP GET requests, demonstrating fundamental web server operations, socket binding, and manual route handling without the use of high-level web frameworks. 
 
 It handles the following routes:
 - `/` - Default landing page welcoming the user.
 - `/about` - About page providing information about the project.
 - Any unmapped route (e.g., `/anything`) - Custom 404 Not Found error page.
 
-## 2. Installation & Setup Guide
+## 2. Screenshots Section
+
+### Home Page (/)
+![Home Page Route](documentation/home.png)
+
+### About Page (/about)
+![About Page Route](documentation/about.png)
+
+### 404 Not Found Page (/anything)
+![404 Not Found Route](documentation/404.png)
+
+### Terminal Server Output
+![Terminal Server Output](documentation/terminal.png)
+
+## 3. Installation & Setup Guide
 
 ### Installing the BSL Interpreter
 1. Open Visual Studio Code.
@@ -28,24 +42,8 @@ bonezegei src/http.bzg
 ```
 The server will bind to port 8080 and output `Server running on http://localhost:8080/`.
 
-## 3. Usage Instructions
+## 4. Usage Instructions
 Once the server is running, you can access the application through your web browser or via `curl`:
 - **Home Route:** Open your browser and navigate to `http://localhost:8080/`
 - **About Route:** Open your browser and navigate to `http://localhost:8080/about`
 - **404 Route:** Navigate to any unknown endpoint like `http://localhost:8080/does-not-exist` to see the 404 error page.
-
-## 4. Screenshots Section
-
-### Home Page (/)
-![Home Page Route](documentation/home.png)
-
-### About Page (/about)
-![About Page Route](documentation/about.png)
-
-### 404 Not Found Page (/anything)
-![404 Not Found Route](documentation/404.png)
-
-### Terminal Server Output
-![Terminal Server Output](documentation/terminal.png)
-
-> **Note:** The images provided here are placeholders. Please capture real screenshots of your browser and terminal using this setup.

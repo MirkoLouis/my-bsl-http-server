@@ -1,0 +1,3 @@
+var b = readFile("public/fun.html");
+var c = "HTTP/1.1 200 OK\r\n" + b;
+print(sizeof(c));

@@ -1,0 +1,2 @@
+var f = readFile("src/http.bzg");
+print(f);
