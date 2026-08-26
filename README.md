@@ -11,16 +11,17 @@ It handles the following routes:
 ## 2. Screenshots Section
 
 ### Home Page (/)
-![Home Page Route](documentation/home.png)
+![Home Page Route](documentation/Home.png)
 
 ### About Page (/about)
-![About Page Route](documentation/about.png)
+![About Page Route](documentation/About.png)
 
 ### 404 Not Found Page (/anything)
-![404 Not Found Route](documentation/404.png)
+![404 Not Found Route](documentation/lol.png)
+![404 Not Found Route](documentation/ggwp.png)
 
 ### Terminal Server Output
-![Terminal Server Output](documentation/terminal.png)
+![Terminal Server Output](documentation/Terminal.png)
 
 ## 3. Installation & Setup Guide
 
