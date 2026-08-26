@@ -1,0 +1,3 @@
+var data = new String("GET / HTTP/1.1");
+var x = data.indexOf("GET");
+print(x);
