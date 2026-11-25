@@ -1,5 +1,7 @@
 # BSL HTTP Server
 
+> **Moved:** this project now lives in [MirkoLouis/ITE183/lab1-http-server](https://github.com/MirkoLouis/ITE183/tree/main/lab1-http-server). This repository is archived.
+
 ## 1. Project Description
 This project is a low-level HTTP Web Server built entirely from scratch using the **[Bonezegei Scripting Language (BSL)](https://github.com/bonezegei/Bonezegei_Scripting_Language)** and the BSL Socket Library. The server binds to port 8080 and handles HTTP GET requests, demonstrating fundamental web server operations, socket binding, and manual route handling without the use of high-level web frameworks. 
 
